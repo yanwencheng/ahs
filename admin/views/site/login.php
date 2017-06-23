@@ -7,8 +7,8 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Login';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('language', 'Login');
+
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton(Yii::t('language', 'Login'), ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
 
             <?php ActiveForm::end(); ?>

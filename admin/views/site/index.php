@@ -2,9 +2,12 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title =Yii::t('language', 'sitename');
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-index">
+
+
+<div class="site-index" data-offset-top="50">
 
     <div class="jumbotron">
         <h1>Congratulations!</h1>
